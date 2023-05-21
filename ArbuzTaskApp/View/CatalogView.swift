@@ -19,24 +19,34 @@ struct CatalogView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHGrid(rows: layout, spacing: 10) {
                         ForEach(CatalogViewModel.shared.popularProducts, id: \.id) { item in
-                            ProductCell(product: item)
+                            NavigationLink {
+                                ProductDetailView(product: item)
+                            } label: {
+                                ProductCell(product: item)
+                                    .foregroundColor(.black)
+                            }
+
+                            
                         }
                     }.padding()
                 }
             }
-            
-            
-            
+
             Section("Выпечка") {
                 ScrollView(.vertical, showsIndicators: false) {
                     LazyVGrid(columns: layout, spacing: 10) {
                         ForEach(CatalogViewModel.shared.bakery, id: \.id) { item in
-                            ProductCell(product: item)
+                            NavigationLink {
+                                ProductDetailView(product: item)
+                            } label: {
+                                ProductCell(product: item)
+                                    .foregroundColor(.black)
+                            }
                         }
                     }.padding()
                 }
             }
-        }
+        }.navigationTitle("Продукты")
     }
 }
 

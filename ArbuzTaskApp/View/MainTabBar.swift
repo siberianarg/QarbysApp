@@ -11,11 +11,15 @@ struct MainTabBar: View {
     var body: some View {
         
         TabView {
-            CatalogView()
+            
+            NavigationView {
+                CatalogView()
+            }
+            
                 .tabItem {
                     VStack {
                         Image(systemName: "list.bullet.circle")
-                        //                        Text("First")
+                        Text("Продукты")
                     }
                 }
             
@@ -23,12 +27,14 @@ struct MainTabBar: View {
                 .tabItem {
                     VStack {
                         Image(systemName: "cart")
+                        Text("Корзина")
                     }
                 }
             SubsView()
                 .tabItem {
                     VStack {
                         Image(systemName: "pencil.circle")
+                        Text("Подписка")
                     }
                 }
         }
