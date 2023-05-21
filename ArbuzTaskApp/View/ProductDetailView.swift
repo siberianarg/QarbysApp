@@ -10,6 +10,7 @@ import SwiftUI
 struct ProductDetailView: View {
     
     var viewModel: ProductDetailViewModel
+    @State var count = 1
     
     var body: some View {
         VStack {
@@ -28,6 +29,12 @@ struct ProductDetailView: View {
                     .padding(.horizontal)
                     .padding(.vertical, 4)
                 Spacer()
+                
+                HStack {
+                    Stepper("Количество", value: $count, in: 1...20)
+                    Text("\(self.count)")
+                        .padding(.leading, 20)
+                }.padding(.horizontal, screen.width/10)
             }
             Button {
                 print("Добавить в корзину")
