@@ -7,11 +7,12 @@
 
 import SwiftUI
 
+let screen = UIScreen.main.bounds
+
 @main
 struct ArbuzTaskAppApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
             MainTabBar()
         }
     }

@@ -11,11 +11,11 @@ struct MainTabBar: View {
     var body: some View {
         
         TabView {
-            ProductsView()
+            CatalogView()
                 .tabItem {
                     VStack {
                         Image(systemName: "list.bullet.circle")
-//                        Text("First")
+                        //                        Text("First")
                     }
                 }
             
