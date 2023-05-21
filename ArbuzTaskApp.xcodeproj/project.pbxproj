@@ -18,6 +18,7 @@
 		26B99E1D2A1A06AB0054EE25 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B99E1C2A1A06AB0054EE25 /* CartView.swift */; };
 		26B99E1F2A1A07820054EE25 /* SubsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B99E1E2A1A07820054EE25 /* SubsView.swift */; };
 		26B99E222A1A0B660054EE25 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B99E212A1A0B660054EE25 /* Product.swift */; };
+		26D34B822A1A5FA000BD2AC8 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D34B812A1A5FA000BD2AC8 /* ProductDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		26B99E1C2A1A06AB0054EE25 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		26B99E1E2A1A07820054EE25 /* SubsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsView.swift; sourceTree = "<group>"; };
 		26B99E212A1A0B660054EE25 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		26D34B812A1A5FA000BD2AC8 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				260320AB2A19FE7B00A4E83C /* ArbuzTaskAppApp.swift */,
-				267DD4892A1A2BD200C4B111 /* ViewModel */,
 				267DD4862A1A25E100C4B111 /* Model */,
 				26B99E202A1A0B240054EE25 /* View */,
+				267DD4892A1A2BD200C4B111 /* ViewModel */,
 				260320AF2A19FE7C00A4E83C /* Assets.xcassets */,
 				260320B12A19FE7C00A4E83C /* Preview Content */,
 			);
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				267DD4872A1A2BBD00C4B111 /* CatalogViewModel.swift */,
+				26D34B812A1A5FA000BD2AC8 /* ProductDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -110,9 +113,9 @@
 		26B99E202A1A0B240054EE25 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				26A07A3D2A1A4D20005E1EF4 /* ProductDetailView.swift */,
 				26B99E182A19FFEB0054EE25 /* MainTabBar.swift */,
 				26B99E1A2A1A06000054EE25 /* CatalogView.swift */,
+				26A07A3D2A1A4D20005E1EF4 /* ProductDetailView.swift */,
 				26B99E1C2A1A06AB0054EE25 /* CartView.swift */,
 				26B99E1E2A1A07820054EE25 /* SubsView.swift */,
 				267DD4852A1A10D800C4B111 /* Components */,
@@ -193,6 +196,7 @@
 				267DD4882A1A2BBD00C4B111 /* CatalogViewModel.swift in Sources */,
 				26B99E1D2A1A06AB0054EE25 /* CartView.swift in Sources */,
 				26B99E192A19FFEB0054EE25 /* MainTabBar.swift in Sources */,
+				26D34B822A1A5FA000BD2AC8 /* ProductDetailViewModel.swift in Sources */,
 				26B99E1B2A1A06000054EE25 /* CatalogView.swift in Sources */,
 				260320AC2A19FE7B00A4E83C /* ArbuzTaskAppApp.swift in Sources */,
 				26B99E1F2A1A07820054EE25 /* SubsView.swift in Sources */,
@@ -333,8 +337,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,6 +346,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.galymzhanaitkaliyev.ArbuzTaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -362,8 +369,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,6 +378,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.galymzhanaitkaliyev.ArbuzTaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

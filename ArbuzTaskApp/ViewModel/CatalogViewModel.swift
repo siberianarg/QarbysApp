@@ -27,7 +27,16 @@ class CatalogViewModel: ObservableObject {
                 title: "Кукуруза",
                 imageUrl: "Not found",
                 price: 1500,
-                description: "Только что сваренная"),
+                description: """
+
+Жаңа ғана дайындалған
+Өте дәмді
+
+Только что сваренная
+Пальчики оближешь
+С любвью приготовленная
+Посолена как надо!
+"""),
         Product(id: "4",
                 title: "Молоко",
                 imageUrl: "Not found",

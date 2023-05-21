@@ -15,7 +15,6 @@ struct MainTabBar: View {
             NavigationView {
                 CatalogView()
             }
-            
                 .tabItem {
                     VStack {
                         Image(systemName: "list.bullet.circle")
