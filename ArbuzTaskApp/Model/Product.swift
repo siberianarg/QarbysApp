@@ -16,8 +16,4 @@ struct Product {
     //    var orderCount: Int
     //    var isRecommend: Bool
     
-    //    var volume: Int
-    //    var weight: Float
-    //    var quantity: Int
-    
 }

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "raspberry-fruit-in-plastic-box_469558-7379.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

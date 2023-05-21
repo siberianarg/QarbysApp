@@ -8,13 +8,35 @@
 import SwiftUI
 
 struct CatalogView: View {
+    
+    let layout = [GridItem(.adaptive(minimum: screen.width/2.5))]
+    
     var body: some View {
-        Text("Продукты")
+        
+        ScrollView(.vertical, showsIndicators: false) {
+            
+            Section("Популярное") {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHGrid(rows: layout, spacing: 10) {
+                        ForEach(CatalogViewModel.shared.popularProducts, id: \.id) { item in
+                            ProductCell(product: item)
+                        }
+                    }.padding()
+                }
+            }
+            
+            
+            
+            Section("Выпечка") {
+                ScrollView(.vertical, showsIndicators: false) {
+                    LazyVGrid(columns: layout, spacing: 10) {
+                        ForEach(CatalogViewModel.shared.bakery, id: \.id) { item in
+                            ProductCell(product: item)
+                        }
+                    }.padding()
+                }
+            }
+        }
     }
 }
 
-struct Products_Previews: PreviewProvider {
-    static var previews: some View {
-        CatalogView()
-    }
-}

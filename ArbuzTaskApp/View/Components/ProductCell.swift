@@ -12,8 +12,8 @@ struct ProductCell: View {
     var product: Product
     
     var body: some View {
-        VStack(spacing: 5) {
-            Image("sourСream")
+        VStack(spacing: 10) {
+            Image("raspberry")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(maxWidth: screen.width * 0.45)
