@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		260320AC2A19FE7B00A4E83C /* ArbuzTaskAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260320AB2A19FE7B00A4E83C /* ArbuzTaskAppApp.swift */; };
-		260320AE2A19FE7B00A4E83C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260320AD2A19FE7B00A4E83C /* ContentView.swift */; };
 		260320B02A19FE7C00A4E83C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260320AF2A19FE7C00A4E83C /* Assets.xcassets */; };
 		260320B32A19FE7C00A4E83C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260320B22A19FE7C00A4E83C /* Preview Assets.xcassets */; };
+		26B99E192A19FFEB0054EE25 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B99E182A19FFEB0054EE25 /* MainTabBar.swift */; };
+		26B99E1B2A1A06000054EE25 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B99E1A2A1A06000054EE25 /* ProductsView.swift */; };
+		26B99E1D2A1A06AB0054EE25 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B99E1C2A1A06AB0054EE25 /* CartView.swift */; };
+		26B99E1F2A1A07820054EE25 /* SubsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B99E1E2A1A07820054EE25 /* SubsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		260320A82A19FE7B00A4E83C /* ArbuzTaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArbuzTaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		260320AB2A19FE7B00A4E83C /* ArbuzTaskAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArbuzTaskAppApp.swift; sourceTree = "<group>"; };
-		260320AD2A19FE7B00A4E83C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		260320AF2A19FE7C00A4E83C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		260320B22A19FE7C00A4E83C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26B99E182A19FFEB0054EE25 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		26B99E1A2A1A06000054EE25 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		26B99E1C2A1A06AB0054EE25 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		26B99E1E2A1A07820054EE25 /* SubsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				260320AB2A19FE7B00A4E83C /* ArbuzTaskAppApp.swift */,
-				260320AD2A19FE7B00A4E83C /* ContentView.swift */,
+				26B99E182A19FFEB0054EE25 /* MainTabBar.swift */,
+				26B99E1A2A1A06000054EE25 /* ProductsView.swift */,
+				26B99E1C2A1A06AB0054EE25 /* CartView.swift */,
+				26B99E1E2A1A07820054EE25 /* SubsView.swift */,
 				260320AF2A19FE7C00A4E83C /* Assets.xcassets */,
 				260320B12A19FE7C00A4E83C /* Preview Content */,
 			);
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				260320AE2A19FE7B00A4E83C /* ContentView.swift in Sources */,
+				26B99E1D2A1A06AB0054EE25 /* CartView.swift in Sources */,
+				26B99E192A19FFEB0054EE25 /* MainTabBar.swift in Sources */,
+				26B99E1B2A1A06000054EE25 /* ProductsView.swift in Sources */,
 				260320AC2A19FE7B00A4E83C /* ArbuzTaskAppApp.swift in Sources */,
+				26B99E1F2A1A07820054EE25 /* SubsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,8 @@ import SwiftUI
 struct ArbuzTaskAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            MainTabBar()
         }
     }
 }
