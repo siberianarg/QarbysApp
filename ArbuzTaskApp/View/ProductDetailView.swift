@@ -12,6 +12,8 @@ struct ProductDetailView: View {
     var viewModel: ProductDetailViewModel
     @State var count = 1
     
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         VStack {
             VStack(alignment: .leading){
@@ -37,14 +39,18 @@ struct ProductDetailView: View {
                 }.padding(.horizontal, screen.width/10)
             }
             Button {
-                print("Добавить в корзину")
+                let position = Position(id: UUID().uuidString,
+                                        product: viewModel.product,
+                                        count: self.count)
+                CartViewModel.shared.addPosotion(position)
+                presentationMode.wrappedValue.dismiss()
             } label: {
                 Text("В корзину!")
                     .padding()
                     .padding(.horizontal, screen.width/3.5)
                     .foregroundColor(Color(.systemGray6))
                     .background(Color(.systemGreen))
-                    .cornerRadius(16)
+                    .cornerRadius(12)
                     .padding()
             }
             Spacer()

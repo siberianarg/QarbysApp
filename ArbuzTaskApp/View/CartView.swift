@@ -9,13 +9,23 @@ import SwiftUI
 
 struct CartView: View {
     
-    var viewModel: CartViewModel
+    @StateObject  var viewModel: CartViewModel
     
     var body: some View {
         
         VStack {
             List(viewModel.positions) { position in
                 PositionCell(position: position)
+                    .swipeActions {
+                        Button {
+                            viewModel.positions.removeAll { pos in
+                                pos.id == position.id
+                            }
+                        } label: {
+                            Text("Удалить")
+                        }.tint(.red)
+                        
+                    }
             }
             .listStyle(.plain)
             .navigationTitle("Корзина")
@@ -53,7 +63,7 @@ struct CartView: View {
                         .background(Color.green)
                         .cornerRadius(12)
                 }
- 
+                
             }.padding()
             
         }
@@ -63,6 +73,6 @@ struct CartView: View {
 
 struct CartView_Previews: PreviewProvider {
     static var previews: some View {
-        CartView(viewModel: CartViewModel())
+        CartView(viewModel: CartViewModel.shared )
     }
 }
