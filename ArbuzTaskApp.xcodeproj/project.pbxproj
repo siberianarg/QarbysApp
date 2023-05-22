@@ -15,6 +15,9 @@
 		263565122A1B86B2006425EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 263565112A1B86B2006425EF /* GoogleService-Info.plist */; };
 		263565152A1B8C1B006425EF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 263565142A1B8C1B006425EF /* FirebaseFirestore */; };
 		263565172A1B8C1B006425EF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 263565162A1B8C1B006425EF /* FirebaseStorage */; };
+		2659BCF02A1BAD98001BE86C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2659BCEF2A1BAD98001BE86C /* Order.swift */; };
+		2659BCF32A1BAFF8001BE86C /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2659BCF22A1BAFF8001BE86C /* DatabaseService.swift */; };
+		2659BCF52A1BBE3C001BE86C /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2659BCF42A1BBE3C001BE86C /* OrderStatus.swift */; };
 		267DD4842A1A10C100C4B111 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DD4832A1A10C100C4B111 /* ProductCell.swift */; };
 		267DD4882A1A2BBD00C4B111 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DD4872A1A2BBD00C4B111 /* CatalogViewModel.swift */; };
 		2684C2E02A1B1E51000D455C /* PositionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684C2DF2A1B1E51000D455C /* PositionCell.swift */; };
@@ -35,6 +38,9 @@
 		261E03A12A1AB51A00ECBF43 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		261E03A32A1AB59E00ECBF43 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		263565112A1B86B2006425EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2659BCEF2A1BAD98001BE86C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		2659BCF22A1BAFF8001BE86C /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		2659BCF42A1BBE3C001BE86C /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
 		267DD4832A1A10C100C4B111 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		267DD4872A1A2BBD00C4B111 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
 		2684C2DF2A1B1E51000D455C /* PositionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionCell.swift; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 		260320AA2A19FE7B00A4E83C /* ArbuzTaskApp */ = {
 			isa = PBXGroup;
 			children = (
+				2659BCF12A1BAFBA001BE86C /* Services */,
 				260320AB2A19FE7B00A4E83C /* ArbuzTaskAppApp.swift */,
 				267DD4862A1A25E100C4B111 /* Model */,
 				26B99E202A1A0B240054EE25 /* View */,
@@ -98,6 +105,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2659BCF12A1BAFBA001BE86C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2659BCF22A1BAFF8001BE86C /* DatabaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		267DD4852A1A10D800C4B111 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +127,8 @@
 			children = (
 				26B99E212A1A0B660054EE25 /* Product.swift */,
 				261E03A32A1AB59E00ECBF43 /* Position.swift */,
+				2659BCEF2A1BAD98001BE86C /* Order.swift */,
+				2659BCF42A1BBE3C001BE86C /* OrderStatus.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,10 +240,13 @@
 				26B99E192A19FFEB0054EE25 /* MainTabBar.swift in Sources */,
 				26D34B822A1A5FA000BD2AC8 /* ProductDetailViewModel.swift in Sources */,
 				26B99E1B2A1A06000054EE25 /* CatalogView.swift in Sources */,
+				2659BCF32A1BAFF8001BE86C /* DatabaseService.swift in Sources */,
+				2659BCF02A1BAD98001BE86C /* Order.swift in Sources */,
 				260320AC2A19FE7B00A4E83C /* ArbuzTaskAppApp.swift in Sources */,
 				26B99E1F2A1A07820054EE25 /* SubsView.swift in Sources */,
 				2684C2E02A1B1E51000D455C /* PositionCell.swift in Sources */,
 				267DD4842A1A10C100C4B111 /* ProductCell.swift in Sources */,
+				2659BCF52A1BBE3C001BE86C /* OrderStatus.swift in Sources */,
 				26B99E222A1A0B660054EE25 /* Product.swift in Sources */,
 				26A07A3E2A1A4D20005E1EF4 /* ProductDetailView.swift in Sources */,
 				261E03A22A1AB51A00ECBF43 /* CartViewModel.swift in Sources */,
