@@ -11,17 +11,15 @@ struct MainTabBar: View {
     var body: some View {
         
         TabView {
-            
             NavigationView {
                 CatalogView()
             }
-                .tabItem {
-                    VStack {
-                        Image(systemName: "list.bullet.circle")
-                        Text("Продукты")
-                    }
+            .tabItem {
+                VStack {
+                    Image(systemName: "list.bullet.circle")
+                    Text("Продукты")
                 }
-            
+            }
             CartView(viewModel: CartViewModel.shared)
                 .tabItem {
                     VStack {

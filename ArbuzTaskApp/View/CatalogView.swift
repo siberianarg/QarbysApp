@@ -27,13 +27,10 @@ struct CatalogView: View {
                                 ProductCell(product: item)
                                     .foregroundColor(.black)
                             }
-                            
-                            
                         }
                     }.padding()
                 }
             }
-            
             Section("Выпечка") {
                 ScrollView(.vertical, showsIndicators: false) {
                     LazyVGrid(columns: layoutForBakery, spacing: 10) {
