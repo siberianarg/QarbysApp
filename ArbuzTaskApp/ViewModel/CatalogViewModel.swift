@@ -28,14 +28,11 @@ class CatalogViewModel: ObservableObject {
                 imageUrl: "Not found",
                 price: 1500,
                 description: """
-
 Жаңа ғана дайындалған
-Өте дәмді
+Өте дәмді!
 
 Только что сваренная
-Пальчики оближешь
-С любвью приготовленная
-Посолена как надо!
+Очень вкусная!
 """),
         Product(id: "4",
                 title: "Молоко",
