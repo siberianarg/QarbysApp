@@ -12,5 +12,5 @@ enum OrderStatus: String {
 case paid = "Оплачен"
 case goingToOrder = "Собирается"
 case courier = "У курьера"
-case issued = "Выдан"
+case issued = "Получено"
 }

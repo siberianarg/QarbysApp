@@ -25,12 +25,7 @@ struct MainTabBar: View {
                         Image(systemName: "cart")
                     }
                 }
-            InfoView()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "info.circle")
-                    }
-                }
+            
         }
     }
 }

@@ -55,7 +55,6 @@ struct CartView: View {
                     var order = Order(date: Date(),
                                       status: OrderStatus.paid.rawValue)
                     print("\(order)")
-                    print("Заказ принят!")
                     order.positions = self.viewModel.positions
                     isSubDetailViewShow.toggle()
                 } label: {
