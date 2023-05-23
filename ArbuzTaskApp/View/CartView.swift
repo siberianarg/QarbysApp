@@ -11,6 +11,8 @@ struct CartView: View {
     
     @StateObject  var viewModel: CartViewModel
     
+    @State private var isSubDetailViewShow = false
+    
     var body: some View {
         
         VStack {
@@ -50,7 +52,12 @@ struct CartView: View {
                         .cornerRadius(12)
                 }
                 Button {
-                    print("Заказать")
+                    var order = Order(date: Date(),
+                                      status: OrderStatus.paid.rawValue)
+                    print("\(order)")
+                    print("Заказ принят!")
+                    order.positions = self.viewModel.positions
+                    isSubDetailViewShow.toggle()
                 } label: {
                     Text("Заказать")
                         .font(.body)
@@ -62,6 +69,9 @@ struct CartView: View {
                         .cornerRadius(12)
                 }
             }.padding()
+        }
+        .fullScreenCover(isPresented: $isSubDetailViewShow) {
+            SubDetailView()
         }
     }
 }

@@ -1,30 +1,23 @@
 //
-//  SubsView.swift
+//  SubDetailView.swift
 //  ArbuzTaskApp
 //
-//  Created by siberianarg on 21.05.2023.
+//  Created by siberianarg on 23.05.2023.
 //
 
 import SwiftUI
 
-struct SubsView: View {
+struct SubDetailView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         VStack {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 20) {
-                    VStack {
-                        Button {
-                            print("Подписка успешно выполнена!")
-                        } label: {
-                            Text("Подписаться на еженедельную доставку")
-                                .padding()
-                                .padding(.horizontal, screen.width/10.5)
-                                .foregroundColor(.white)
-                                .background(Color.yellow)
-                                .cornerRadius(12)
-                        }
-                    }
+                    
                     VStack(alignment: .leading, spacing: 8) {
+                        
                         Text("Адресс доставки")
                             .bold()
                         Text("Almaty city, Zharokova st., h.233, apt.17 ")
@@ -40,10 +33,6 @@ struct SubsView: View {
                         Text("14:00 - 18:00")
                     }
                     Spacer()
-//                    //Таблица с заказами, подписками
-//                    List {
-//                        Text("Ваш заказ ")
-//                    }.listStyle(.plain)
                     
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Контактная информация")
@@ -62,25 +51,28 @@ struct SubsView: View {
                     }
                 }
             }
-            VStack(alignment: .center) {
+            VStack {
                 Button {
-                    print("Заказ подтвержден!")
+                    print("Подписка успешно выполнена!") //Alert
+                    presentationMode.wrappedValue.dismiss()
+                    //и возврат на профиль со статусом заказа
                 } label: {
-                    Text("Подтвердить заказ")
-                        .padding(.vertical,screen.height/30)
-                        .padding(.horizontal, screen.width/3.5)
-                        .bold()
+                    Text("Подписаться на еженедельную доставку")
+                        .padding()
+                        .padding(.horizontal, screen.width/10.5)
                         .foregroundColor(.white)
                         .background(Color.green)
-                        .cornerRadius(0)
+                        .cornerRadius(12)
                 }
             }
+
         }
     }
 }
 
-struct SubsView_Previews: PreviewProvider {
+
+struct SubDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        SubsView()
+        SubDetailView()
     }
 }

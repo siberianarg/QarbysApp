@@ -12,7 +12,7 @@ class CatalogViewModel: ObservableObject {
     ///singletone
     static let shared = CatalogViewModel()
     
-    var popularProducts = [
+    var popularProducts = [//loadProducts
         Product(id: "1",
                 title: "Сметана Вай-Вай",
                 imageUrl: "Not found",

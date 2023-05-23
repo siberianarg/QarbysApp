@@ -17,21 +17,18 @@ struct MainTabBar: View {
             .tabItem {
                 VStack {
                     Image(systemName: "list.bullet.circle")
-                    Text("Продукты")
                 }
             }
             CartView(viewModel: CartViewModel.shared)
                 .tabItem {
                     VStack {
                         Image(systemName: "cart")
-                        Text("Корзина")
                     }
                 }
-            SubsView()
+            InfoView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "pencil.circle")
-                        Text("Подписка")
+                        Image(systemName: "info.circle")
                     }
                 }
         }
